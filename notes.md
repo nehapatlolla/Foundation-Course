@@ -1,6 +1,6 @@
 # HTML🩻
 
-![alt text](image-3.png)
+![alt text](example.png)
 
 Hypertext Markup Language- defines the meaning and structure of web content
 
@@ -70,7 +70,7 @@ HTML contains 6 heading levels, h1 to h6
 <p>This is a single paragraph</p>
 ```
 
-# Style HTML using CSS 😎![alt text](image-2.png)
+# Style HTML using CSS 😎
 
 **Cascading Style Sheets** — or CSS. CSS is not a programming language, is a _style sheet language_.
 
@@ -121,7 +121,7 @@ CSS layout is mostly based on the box model. Each box taking up space on your pa
 
 [Mdn cheatsheet](https://www.datacamp.com/cheat-sheet/markdown-cheat-sheet-23)
 
-# Intro to JS 👋![alt text](image-4.png)
+# Intro to JS 👋
 
 JavaScript (JS) is a lightweight interpreted programming language with first-class functions.
 
