@@ -155,7 +155,7 @@ We are not replacing address of marks but giving it a new value , So this can be
 Address cannot be changed in the const.
 
 ```python
-const t1 =[ 30,40,50]
+        const t1 =[ 30,40,50]
         const t2=t1;
         const t3= [30,40,50];
         t1.push(80);
@@ -206,7 +206,7 @@ function driving(age){
 
 in this case not defined is the output, // Both are not defined now, because function is more tuffer block.
 
-### Type casting
+## Type casting
 
 Implicit coercion
 
@@ -217,7 +217,7 @@ console.log(x1+x2);
 console.log(x1-x2);
 ```
 
-this is operator overloading. The ouput is 35, -2
+This is operator overloading. The ouput is 35, -2
 
 Here "+" prefers concatenation over addition( because tc39 wrote those protocols to concatenate instead of addition), and "-" has only one option to Subtract
 
@@ -230,6 +230,76 @@ console.log(x1+parseint(x2));
 console.log(x1+ +x2);
 ```
 
-[] + [] will be an empty string "".
+[ ] + [ ] will be an empty string "".
 
 null + 5 equals 5
+
+Anything with NaN is NAn
+
+## which is faster and why?
+
+```python
+var g1 = 5;
+var g2 = "5";
+console.log(g1 ==g2);
+console.log(g1 ===g2);
+```
+
+"==" string converts to the number, allows coercion.
+
+The faster one is "===" with concept of no coercion, and there is only one step.
+
+## How to measure code quality'
+
+5 pillars
+
+1. Readability- 75%
+
+2. Maintainability- Code Debt
+
+3. Extensiblity- a well coded program should allow and be open for the open changes
+
+4. Testability- Make it easy for the testers
+
+5. Performance - dont sacrifice readability for the performance, execution speed, resource utilization, and scalability.
+
+## Types of functions
+
+Why Functions?
+
+> DRY
+> Eliminate code complexity
+> Enable reusability
+> Allows modular coding
+> Parameterization- customized by passing different values into them.
+
+1. Normal Function.
+
+2. Arrow function. - easy implementation
+
+3. Anonymous function
+
+Normal function
+
+```python
+function add(a, b) {
+    return a + b;
+}
+```
+
+Longer version of the arrow function
+
+```python
+const double = (n) => {// Arrow functions
+    return n*2;
+};
+double(4)
+```
+
+short function
+
+```python
+const add = (a, b) => a + b;
+```
+
+const double
