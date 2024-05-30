@@ -123,6 +123,8 @@ CSS layout is mostly based on the box model. Each box taking up space on your pa
 
 # Intro to JS 👋
 
+JavaScript was created in the first place for DOM manipulation.
+
 JavaScript (JS) is a lightweight interpreted programming language with first-class functions.
 
 JavaScript and java are **NOT SAME**. The relation between java and js is like car and carpet.
