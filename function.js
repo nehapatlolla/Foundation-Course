@@ -46,3 +46,4 @@ console.log("Using Arrow Function ", a3); // [8, 6, 7, 9]
 
 
 // DRY : Thumb rule-- Dont repeat yourself
+

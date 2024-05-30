@@ -303,3 +303,128 @@ const add = (a, b) => a + b;
 ```
 
 const double
+
+## Copy by value
+
+var q1=[1,2]
+var q3=[q1]
+
+## Different for loops
+
+1. for loop
+2. for of loop
+3. for in loop
+
+### Normal for loop
+
+```python
+ for (expression 1; expression 2; expression 3) {
+ // code block to be executed
+}
+```
+
+Exp 1 is executed (one time) before the execution of the code block.
+
+Exp 2 defines the condition for executing the code block.
+
+Exp 3 is executed (every time) after the code block has been executed.
+
+```python
+const marks= [80,90,100,70,60];
+// more control
+for (let i=0; i<marks.length; i++){
+    console.log("Index: ", i, "Mark: ", marks[i]);
+}
+```
+
+### For of loop
+
+const topMovies = [];
+for (const movie of movies) {
+if (movie.ratings.every(rating => rating === 5)) {
+topMovies.push(movie.title);
+}
+}
+
+console.log(topMovies.join(" and "));
+
+// Function to calculate the average rating for a movie
+function calculateAverageRating(ratings) {
+return ratings.reduce((sum, rating) => sum + rating, 0) / ratings.length;
+}
+
+// Function to find the top-rated movie title
+function getTopMovieTitle(movies) {
+return movies.reduce((topMovie, movie) => {
+const movieAverageRating = calculateAverageRating(movie.ratings);
+const topMovieAverageRating = calculateAverageRating(topMovie.ratings);
+
+        return movieAverageRating > topMovieAverageRating ? movie : topMovie;
+    }).title;
+
+}
+
+// List of movies
+const movies = [
+{ title: "Inception", ratings: [5, 4, 5, 4, 5] },
+{ title: "Interstellar", ratings: [5, 5, 4, 5, 4] },
+{ title: "Dunkirk", ratings: [4, 4, 4, 3, 4] },
+{ title: "The Dark Knight", ratings: [5, 5, 5, 5, 5] },
+{ title: "Memento", ratings: [4, 5, 4, 5, 4] },
+];
+
+// Get the top-rated movie title
+const topMovieTitle = getTopMovieTitle(movies);
+console.log(topMovieTitle); // Output: The Dark Knight
+
+function calculateAverage(arr) {
+if (arr.length === 0) {
+return 0; // Return 0 if the array is empty to avoid division by zero
+}
+
+    const sum = arr.reduce((acc, num) => acc + num, 0);
+    return sum / arr.length;
+
+}
+
+// Example usage:
+const numbers = [5, 4, 6, 8, 9];
+const average = calculateAverage(numbers);
+console.log("Average:", average); // Output: 6.4
+
+const movies = [
+{ title: "Inception", ratings: [5, 4, 5, 4, 5] },
+{ title: "Interstellar", ratings: [5, 5, 4, 5, 4] },
+{ title: "Dunkirk", ratings: [4, 4, 4, 3, 4] },
+{ title: "The Dark Knight", ratings: [5, 5, 5, 5, 5] },
+{ title: "Memento", ratings: [4, 5, 4, 5, 4] }
+];
+
+function calculateAverageRating(ratings) {
+if (ratings.length === 0) {
+return 0; // Return 0 if the ratings array is empty
+}
+
+    let sum = 0;
+    for (let i = 0; i < ratings.length; i++) {
+        sum += ratings[i];
+    }
+
+    return sum / ratings.length;
+
+}
+
+function displayMovieRatings(movies) {
+for (let i = 0; i < movies.length; i++) {
+const movie = movies[i];
+const avgRating = calculateAverageRating(movie.ratings);
+console.log(`Title: ${movie.title}, Average Rating: ${avgRating.toFixed(2)}`);
+}
+}
+
+// Display average rating for each movie
+displayMovieRatings(movies);
+
+const numbers = [10, 5, 8, 20, 15];
+const maxNumber = Math.max(...numbers);
+const maxIndex = numbers.indexOf(maxNumber);
