@@ -92,7 +92,23 @@ const movies = [
 
   // Function to calculate the average rating for a movie
 
-    
+  let highestAverage = -1; // Initialize with a low value
+  let highestRatedMovie = null; 
+  
+  for (let i = 0; i < movies.length; i++) {
+    const movie = movies[i];
+    let totalRating = 0;
+    for (let j = 0; j < movie.ratings.length; j++) {
+        totalRating += movie.ratings[j];
+    }
+    const averageRating = totalRating / movie.ratings.length;
+    if (averageRating > highestAverage) {
+        highestAverage = averageRating;
+        highestRatedMovie = movie;
+    }
+}
+
+  console.log( highestRatedMovie.title);
 
     
 
