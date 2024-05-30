@@ -133,9 +133,15 @@ The standards for JavaScript are the ECMAScript Language Specification.
 
 Reassign can be allowed in Var, let and cannot be allowed in const.
 
-> But const can still be changed why?
+**Reassigning**- giving an other value to the variable.
 
----
+**Redeclaration**- creating a variable again
+
+**Redeclare** cannot be done by **let, const** but done by the **var**.
+
+Reassign can be done by **var**, **let** and not by the **const**
+
+> But const can still be changed why?
 
 ```python
 const marks = [80,79,90];
@@ -144,6 +150,86 @@ console.log(marks);
 
 ```
 
----
+We are not replacing address of marks but giving it a new value , So this can be possible.
 
-We are not replacing address of marks but giving it a new address
+Address cannot be changed in the const.
+
+```python
+const t1 =[ 30,40,50]
+        const t2=t1;
+        const t3= [30,40,50];
+        t1.push(80);
+        t2.push(90);
+        t3.push(70);
+        console.log(t1);
+        console.log(t2);
+        console.log(t3);
+```
+
+In this case
+
+## Scope
+
+In general, life time of a variable defines that area of that variable where it gets the access
+
+let and const both are block scope. Var is called a function scope, But why var is also working?
+
+```python
+        {
+        var x1= 10;
+        let x2=20;
+        }
+        console.log(x1);
+        console.log(x2);
+```
+
+var is printed as 10 , but let cannot be printed a 20 . Instead it prints not-defined.
+
+Undefined is a value
+
+Not defined is an error
+
+```python
+
+function driving(age){
+             if(age>18){
+                 let msg ="eligible";
+             }
+             else{
+                 let msg = "not eligible";
+             }
+             console.log("you are" +msg);
+         }
+         driving(20);
+
+```
+
+in this case not defined is the output, // Both are not defined now, because function is more tuffer block.
+
+### Type casting
+
+Implicit coercion
+
+```python
+var x1 = 3;
+var x2 = "5";
+console.log(x1+x2);
+console.log(x1-x2);
+```
+
+this is operator overloading. The ouput is 35, -2
+
+Here "+" prefers concatenation over addition( because tc39 wrote those protocols to concatenate instead of addition), and "-" has only one option to Subtract
+
+Explicit coercion
+
+```python
+var x1 = 3;
+var x2 = "5";
+console.log(x1+parseint(x2));
+console.log(x1+ +x2);
+```
+
+[] + [] will be an empty string "".
+
+null + 5 equals 5
