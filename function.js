@@ -47,3 +47,12 @@ console.log("Using Arrow Function ", a3); // [8, 6, 7, 9]
 
 // DRY : Thumb rule-- Dont repeat yourself
 
+hello = function() {
+    return "Hello World!";
+  }//before arrow
+hello = () => {
+    return "Hello World!";
+  }// with arrow
+
+
+
