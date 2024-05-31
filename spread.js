@@ -7,3 +7,4 @@ var t1=[400,500];
 var t2= [90,80];
 var t3 = [...t2, ...t1];//merge also can be done using the spread opeartor
 console.log(t3);//90,80,400,500
+

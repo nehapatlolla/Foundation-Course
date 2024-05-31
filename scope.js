@@ -1,4 +1,30 @@
 {
+    let x = 2;
+  }
+  // x can NOT be used here
+  {
+    var x = 2;
+  }
+  // x CAN be used here
+  // code here can NOT use carName
+
+function myFunction() {
+    let carName = "Volvo";
+    // code here CAN use carName
+  }
+  
+  // code here can NOT use carName
+
+  //Global variables
+  let carName = "Volvo";
+// code here can use carName
+
+function myFunction() {
+// code here can also use carName
+}
+
+
+{
     var x1= 10;
     let x2=20;
     console.log(x2);

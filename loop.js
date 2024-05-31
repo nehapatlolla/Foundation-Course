@@ -28,17 +28,35 @@ const newItems= [
 
 //   Ex 1.1: Combine cart + newItems
 const allitems= [... cart, ... newItems];//use the spread operator
-console.log(allitems)
+console.log(allitems);
 
 // Ex 1.2: Find total of cart
 
 let total = 0;
-for (let item of allitems) {
-    let cost = item.price * item.quantity;
-    total= total + cost;
+for (let { price, quantity} of allitems) {// item is the object here so we are destructing the item for the object destructing
+    total += price * quantity;
+    /*let cost = item.price * item.quantity;
+    total= total + cost;*/
+
+    /*
+We're using a for...of loop to iterate over each item in the allitems array.
+
+Inside the loop, we're using object destructuring to extract the price and quantity properties from each item object directly.
+
+We then calculate the cost of each item (price \* quantity) and add it to the total variable.*/
 }
 console.log("Total :", total);
 
+/* const allitems= [...cart, ...newItems]; // Assuming cart and newItems are arrays of objects
+
+// Calculate total cost using object destructuring
+let total = 0;
+for (let { price, quantity } of allitems) {
+    total += price * quantity;
+}
+
+console.log("Total:", total);
+*/
 
 const books = [
     { title: "Infinite Jest", rating: 4.5, genre: "Fiction" },
@@ -77,11 +95,9 @@ const people = [];
 for (const newone of employes){
     if(newone.grade >= 80) {
         people. push({ id: newone.id, status: 'Promoted'})
-
     }
 }
 console.log(people);
-
 // top 1 movie titles
 const movies = [
     { title: "Inception", ratings: [5, 4, 5, 4, 5] },
@@ -100,17 +116,23 @@ const movies = [
   let highRatedMovie = null; 
   for (let i = 0; i < movies.length; i++) {
     const movie = movies[i];
-    let totalRating = 0;
-    for (let j = 0; j < movie.ratings.length; j++) {
+    let totalRating = 0;//variable will be used to calculate the sum of all the ratings for the current movie.
+
+
+    for (let j = 0; j < movie.ratings.length; j++) {//iterates  through the ratings inthe rating array
         totalRating += movie.ratings[j];
+        // adds each rating to the totalRating, sum of the ratings for the current movie is present in the total rating
     }
     const averageRating = totalRating / movie.ratings.length;
-    if (averageRating > high) {
+    if (averageRating > high) 
+        {
         high = averageRating;
         highRatedMovie = movie;
     }
 }
-  console.log( highRatedMovie.title);
+  console.log(highRatedMovie.title);
+
+
 
     
 

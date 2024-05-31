@@ -123,6 +123,11 @@ CSS layout is mostly based on the box model. Each box taking up space on your pa
 
 # Intro to JS 👋
 
+Created by Netscape - 1995, Developed by Brandon Eich
+JScript created by Microsoft vs JavaScript
+
+Java script was born as livescript
+
 JavaScript was created in the first place for DOM manipulation.
 
 JavaScript (JS) is a lightweight interpreted programming language with first-class functions.
@@ -130,6 +135,18 @@ JavaScript (JS) is a lightweight interpreted programming language with first-cla
 JavaScript and java are **NOT SAME**. The relation between java and js is like car and carpet.
 
 The standards for JavaScript are the ECMAScript Language Specification.
+
+## HTTP
+
+The HTTP request message is sent in **third** part of three-way handshake.
+
+The first line of HTTP request message is called **Request line**
+
+The values GET, POST, HEAD etc are specified in request line of HTTP message
+
+There are two methods which help to **request a response** from a server. Those are GET and POST. In GET method, the client requests data from server. In POST method the client submits data to be processed to the server.
+
+**LET, CONST keywords**
 
 Reassign can be allowed in Var, let and cannot be allowed in const.
 
@@ -206,6 +223,10 @@ function driving(age){
 
 in this case not defined is the output, // Both are not defined now, because function is more tuffer block.
 
+The lifetime of a JavaScript variable starts when it is declared.
+
+**Hoisting** is JavaScript's default behavior of moving all declarations to the top of the current scope (to the top of the current script or the current function).
+
 ## Type casting
 
 Implicit coercion
@@ -273,6 +294,10 @@ Why Functions?
 > Allows modular coding
 > Parameterization- customized by passing different values into them.
 
+parameter-assigning a value
+
+Arguments are used to call the function
+
 1. Normal Function.
 
 2. Arrow function. - easy implementation
@@ -306,6 +331,10 @@ const double
 
 ## Copy by value
 
+we use spread operator
+
+data type of the array is object
+
 var q1=[1,2]
 var q3=[q1]
 
@@ -316,6 +345,8 @@ var q3=[q1]
 3. for in loop
 
 ### Normal for loop
+
+Important manipulations in for loop are Initialization, Testing, Updation.
 
 ```python
  for (expression 1; expression 2; expression 3) {
@@ -339,92 +370,107 @@ for (let i=0; i<marks.length; i++){
 
 ### For of loop
 
-const topMovies = [];
-for (const movie of movies) {
-if (movie.ratings.every(rating => rating === 5)) {
-topMovies.push(movie.title);
-}
-}
+### Object methods
 
-console.log(topMovies.join(" and "));
+```python
+// Create Target Object
+const person1 = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 50,
+  eyeColor: "blue"
+};
 
-// Function to calculate the average rating for a movie
-function calculateAverageRating(ratings) {
-return ratings.reduce((sum, rating) => sum + rating, 0) / ratings.length;
-}
+// Create Source Object
+const person2 = {firstName: "Anne",lastName: "Smith"};
 
-// Function to find the top-rated movie title
-function getTopMovieTitle(movies) {
-return movies.reduce((topMovie, movie) => {
-const movieAverageRating = calculateAverageRating(movie.ratings);
-const topMovieAverageRating = calculateAverageRating(topMovie.ratings);
+// Assign Source to Target
+Object.assign(person1, person2);
+```
 
-        return movieAverageRating > topMovieAverageRating ? movie : topMovie;
-    }).title;
+### template literal
 
-}
+We use template literal removing +, = with $ and { }
 
-// List of movies
-const movies = [
-{ title: "Inception", ratings: [5, 4, 5, 4, 5] },
-{ title: "Interstellar", ratings: [5, 5, 4, 5, 4] },
-{ title: "Dunkirk", ratings: [4, 4, 4, 3, 4] },
-{ title: "The Dark Knight", ratings: [5, 5, 5, 5, 5] },
-{ title: "Memento", ratings: [4, 5, 4, 5, 4] },
-];
+This is called as interpolation
 
-// Get the top-rated movie title
-const topMovieTitle = getTopMovieTitle(movies);
-console.log(topMovieTitle); // Output: The Dark Knight
+## refactoring
 
-function calculateAverage(arr) {
-if (arr.length === 0) {
-return 0; // Return 0 if the array is empty to avoid division by zero
-}
+Adding new features, quality will be better, functionality is same.
 
-    const sum = arr.reduce((acc, num) => acc + num, 0);
-    return sum / arr.length;
+Manager wont be happy with the refactoring because that wont be any changes .
 
-}
+Whenever the colours are faded out then it says we are not using that particular keywords. then use the interpolation
 
-// Example usage:
-const numbers = [5, 4, 6, 8, 9];
-const average = calculateAverage(numbers);
-console.log("Average:", average); // Output: 6.4
+`http://${domain}?genre=${genre}&year=${year}`;
+//return "http://" + domain + "?genere=" + genre + "&year=" + year;
 
-const movies = [
-{ title: "Inception", ratings: [5, 4, 5, 4, 5] },
-{ title: "Interstellar", ratings: [5, 5, 4, 5, 4] },
-{ title: "Dunkirk", ratings: [4, 4, 4, 3, 4] },
-{ title: "The Dark Knight", ratings: [5, 5, 5, 5, 5] },
-{ title: "Memento", ratings: [4, 5, 4, 5, 4] }
-];
+### Array Destructuring
 
-function calculateAverageRating(ratings) {
-if (ratings.length === 0) {
-return 0; // Return 0 if the ratings array is empty
-}
+Unpacking the values from the array
 
-    let sum = 0;
-    for (let i = 0; i < ratings.length; i++) {
-        sum += ratings[i];
-    }
+```python
+**const [t1, t2, t3=80]= [100, 200]; // declaring the value
+console.log(t1, t2, t3);//100, 200, 80**
+```
 
-    return sum / ratings.length;
+t3=80 is called as default value and it is only taken when it is undefined
 
-}
+```python
 
-function displayMovieRatings(movies) {
-for (let i = 0; i < movies.length; i++) {
-const movie = movies[i];
-const avgRating = calculateAverageRating(movie.ratings);
-console.log(`Title: ${movie.title}, Average Rating: ${avgRating.toFixed(2)}`);
-}
-}
+const [t1, t2, t3=80]= [100, 200,300]; // declaring the value
+console.log(t1, t2, t3);// 100, 200 , 300
+```
 
-// Display average rating for each movie
-displayMovieRatings(movies);
+### Object destructuring
 
-const numbers = [10, 5, 8, 20, 15];
-const maxNumber = Math.max(...numbers);
-const maxIndex = numbers.indexOf(maxNumber);
+Object destructuring in JavaScript is a way to extract properties from objects and bind them to variables.
+
+- Object destructuring is particularly useful when working with functions that return objects, as it allows you to easily extract the properties you need from the returned object.\*
+
+Diff between array and obj destruction is we use index in arr wnd keys in obj
+
+where ever there is declaration, we can use the object destruction to make the code better
+
+**ES6+ features**
+
+1. numeric seperators 1_00_00_000
+2. nullish coalacing ?? for this operator 0 is a truthy value
+3. Optional chaining
+
+### Ternary operators
+
+5>4?"aww" : "cool"
+
+### Binary operators
+
+Arithmatic = + - / % \*
+Loigcal= &&, ||,
+Relational > < >=, == , ===
+
+### Unary operator
+
+++, --
+
+!
+
+### Truthy and falsy
+
+If a value converts into true its truthy, if not converts into true its falsy
+
+[falsy values](https://developer.mozilla.org/en-US/docs/Glossary/Falsy)
+
+[ ] -- gives the truthy because it is not in the falsy table
+
+## Shortcuts
+
+<!-- 1. windows + .  emojis -->
+<!-- 2. ctrl+ / comment -->
+
+ctrl+ , settings
+
+Ctrl+ space , Autocomplete
+
+ctrl+shift+p --- command palette
+
+Ctrl+click ----
