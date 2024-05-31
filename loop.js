@@ -1,3 +1,6 @@
+
+
+
 const marks= [80,90,100,70,60];
 // more control
 for (let i=0; i<marks.length; i++){
@@ -92,9 +95,9 @@ const movies = [
 
   // Function to calculate the average rating for a movie
 
-  let highestAverage = -1; // Initialize with a low value
-  let highestRatedMovie = null; 
   
+  let high = -1; // Initializing with a low value
+  let highRatedMovie = null; 
   for (let i = 0; i < movies.length; i++) {
     const movie = movies[i];
     let totalRating = 0;
@@ -102,13 +105,12 @@ const movies = [
         totalRating += movie.ratings[j];
     }
     const averageRating = totalRating / movie.ratings.length;
-    if (averageRating > highestAverage) {
-        highestAverage = averageRating;
-        highestRatedMovie = movie;
+    if (averageRating > high) {
+        high = averageRating;
+        highRatedMovie = movie;
     }
 }
-
-  console.log( highestRatedMovie.title);
+  console.log( highRatedMovie.title);
 
     
 
