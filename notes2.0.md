@@ -143,18 +143,3 @@ cannot have special symbols($,@,#,!)
  *
  * /
 ```
-
-/\*\*
-
-- Converts a string to uppercase.
-- @param {string} str - The input string to be converted.
-- @returns {string} The uppercase version of the input string.
-  \*/
-  function toUpperCase(str) {
-  return str.toUpperCase();
-  }
-
-// Example usage:
-const inputString = "hello, world!";
-const uppercaseString = toUpperCase(inputString);
-console.log(uppercaseString); // Output: "HELLO, WORLD!"
