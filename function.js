@@ -30,19 +30,21 @@ function sum(a,b){
 }
 sum(5,10);
 
-const sum1 = (a,b) => a+b;
+/*const sum1 = (a,b) => a+b;
 
-const a = ["Hi", "Hello", "wow", "chill"];
+const ab = ["Hi", "Hello", "wow", "chill"];
 
 const a2 = a.map(function (s) {
     return s.length;
 });
+*/
 
-console.log("Normal way ", a2); // [8, 6, 7, 9]
+   /* console.log("Normal way ", a2); // [8, 6, 7, 9]
+    
+    const a3 = ab.map((s) => s.length);
+    
+    console.log("Using Arrow Function ", a3); // [8, 6, 7, 9]*/
 
-const a3 = a.map((s) => s.length);
-
-console.log("Using Arrow Function ", a3); // [8, 6, 7, 9]
 
 
 // DRY : Thumb rule-- Dont repeat yourself
@@ -56,3 +58,12 @@ hello = () => {
 
 
 
+function reverseTheNumber(n) //Define a function named revrsethenumber that takes the parameter i
+{
+   //comvert the number into the string
+   /* converting the number into the string different methods*/
+   str = String(n);
+   return str.split("").reverse().join("");
+
+}
+console.log(Number(reverseTheNumber(32243)))

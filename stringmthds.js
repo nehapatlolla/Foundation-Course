@@ -74,3 +74,9 @@ function processNames(names) {
 const namesArray = ["john doe", "jane smith", "alice jones"];
 console.log(processNames(namesArray));*/
 
+/* converting the number into the string have the differnet ways
+String literal- str=""+num";
+String constructor- str= String(num);
+toString- str = num.toString();
+String literal simple- str = ""+num;*/
+
