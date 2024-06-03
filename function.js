@@ -67,3 +67,8 @@ function reverseTheNumber(n) //Define a function named revrsethenumber that take
 
 }
 console.log(Number(reverseTheNumber(32243)))
+
+function palindrome(i) {
+
+}
+
