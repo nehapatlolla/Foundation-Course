@@ -270,7 +270,11 @@ console.log(g1 ===g2);
 
 The faster one is "===" with concept of no coercion, and there is only one step.
 
-## How to measure code quality'
+Variable nmaes, function names should be in camel case.
+
+Class names should be in pascal case
+
+## How to measure code quality
 
 5 pillars
 
@@ -369,98 +373,6 @@ for (let i=0; i<marks.length; i++){
 ```
 
 ### For of loop
-
-### Object methods
-
-```python
-// Create Target Object
-const person1 = {
-  firstName: "John",
-  lastName: "Doe",
-  age: 50,
-  eyeColor: "blue"
-};
-
-// Create Source Object
-const person2 = {firstName: "Anne",lastName: "Smith"};
-
-// Assign Source to Target
-Object.assign(person1, person2);
-```
-
-### template literal
-
-We use template literal removing +, = with $ and { }
-
-This is called as interpolation
-
-## refactoring
-
-Adding new features, quality will be better, functionality is same.
-
-Manager wont be happy with the refactoring because that wont be any changes .
-
-Whenever the colours are faded out then it says we are not using that particular keywords. then use the interpolation
-
-`http://${domain}?genre=${genre}&year=${year}`;
-//return "http://" + domain + "?genere=" + genre + "&year=" + year;
-
-### Array Destructuring
-
-Unpacking the values from the array
-
-```python
-**const [t1, t2, t3=80]= [100, 200]; // declaring the value
-console.log(t1, t2, t3);//100, 200, 80**
-```
-
-t3=80 is called as default value and it is only taken when it is undefined
-
-```python
-
-const [t1, t2, t3=80]= [100, 200,300]; // declaring the value
-console.log(t1, t2, t3);// 100, 200 , 300
-```
-
-### Object destructuring
-
-Object destructuring in JavaScript is a way to extract properties from objects and bind them to variables.
-
-- Object destructuring is particularly useful when working with functions that return objects, as it allows you to easily extract the properties you need from the returned object.\*
-
-Diff between array and obj destruction is we use index in arr wnd keys in obj
-
-where ever there is declaration, we can use the object destruction to make the code better
-
-**ES6+ features**
-
-1. numeric seperators 1_00_00_000
-2. nullish coalacing ?? for this operator 0 is a truthy value
-3. Optional chaining
-
-### Ternary operators
-
-5>4?"aww" : "cool"
-
-### Binary operators
-
-Arithmatic = + - / % \*
-Loigcal= &&, ||,
-Relational > < >=, == , ===
-
-### Unary operator
-
-++, --
-
-!
-
-### Truthy and falsy
-
-If a value converts into true its truthy, if not converts into true its falsy
-
-[falsy values](https://developer.mozilla.org/en-US/docs/Glossary/Falsy)
-
-[ ] -- gives the truthy because it is not in the falsy table
 
 ## Shortcuts
 

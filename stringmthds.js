@@ -80,3 +80,16 @@ String constructor- str= String(num);
 toString- str = num.toString();
 String literal simple- str = ""+num;*/
 
+// write a function to make it uppercase
+ /**
+ * Converts a string to uppercase.
+ * @param {string} str This is the input string
+ * @returns {string} this is the uppercase of the input string
+ **/
+function toUpperCase(str){
+  return str.toUpperCase();
+}
+
+let name= "neha reddy";
+let changedUpperCase = toUpperCase(name);
+console.log(changedUpperCase);
