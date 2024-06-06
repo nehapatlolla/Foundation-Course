@@ -124,7 +124,7 @@ selects <p class="my-class"> and <a class="my-class">
 ## Text styling
 
 1. font size
-2. fon weight- thickness of the font
+2. font weight- thickness of the text
 3. font style- Italic
 4. color
 
