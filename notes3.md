@@ -8,12 +8,12 @@ Without using an exact life cycle model, the development of a software product w
 2. Analysis- is it technical possible, business and technical analysis
 3. Design- figma is the standard, Adobe Xd- designing is like the drawing the broader stroke . Any correction can be done easily in this part of the cycle.
 4. Implementation- is done by the developers
-5. Testing and integeration - done by the
+5. Testing and integeration - done by the QA team
 6. Maintenance - customer support
 
 ![alt text](image.png)
 
-System Architect - he is the one who fixes the quality, tailor making th app , they should know all the things about FE , BE,
+System Architect - he is the one who fixes the quality, tailor making the app , they should know all the things about FE , BE,
 
 Why do you need visual representation?
 
@@ -23,7 +23,7 @@ simplifies complex ideas and data and makes them easy to understand
 
 > variants ,, learn these two things, to master designing. use figma (color theory)
 
-STakeholders- If anything goe swrong in the product their collars will be pulled first. or calle dfirsr, they hold the entire responsibilty, hholding a stake,
+**STakeholders**- If anything goes wrong in the product their collars will be pulled first. or called first, they hold the entire responsibilty, holding a stake,
 
 ## Agile
 
@@ -65,7 +65,7 @@ If you’re working under strict time or budget constraints, waterfall should be
 
 Migration projects where the requirement is clear, it takes min of the 6 months period
 
-We have 2 release cycles. but in agile 12 releases, ina month 2 sprints are done. 1 sprint for develoment and other is for the development.
+We have 2 release cycles. but in agile 12 releases, in a month 2 sprints are done. 1 sprint for develoment and other is for the testing.
 
 ## implementation of the agile- Scrum
 
@@ -76,9 +76,10 @@ theme of this model is to keep the end user’s satisfaction in mind. For that, 
 ![alt text](image-1.png)'
 
 **Sprint**- it happens in 2 weeks, Design, develop, test, deploy working incerement.
+
 **Sprint planning(1hr)**---> is for filling the 14 days of time , calender fixing and that should be full. And the assigned people provides the story points
 
-Bug fixing is done inthe second sprint
+Bug fixing is done in the second sprint
 
 ![alt text](image-2.png)
 

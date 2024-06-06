@@ -128,6 +128,14 @@ selects <p class="my-class"> and <a class="my-class">
 3. font style- Italic
 4. color
 
+## Text styling - 2
+
+1. text transform
+2. text align
+3. text - decoration
+4. letter spacing
+5. line height
+
 CSS layout is mostly based on the box model. Each box taking up space on your page has properties like:
 
 **padding**, the space around the content.
