@@ -18,18 +18,35 @@
         letter-spacing: 1px;
       }
       /* class selector */
+      /* internal css */
       .Nature {
         background-color: rgb(234, 168, 179);
         height: 500px;
         width: 100%;
         object-fit: cover;
         padding: 10px 10px 10px 10px;
+        /* inline css */
         border: 5px solid rgb(119, 8, 8);
+      }
+
+      h3{
+        font-size: 60px;
+        font-weight: normal;
+        font-style: italic;
+        color: blue;
+        /* 1.color
+        2.RGB
+        3. HSL*/
       }
       
     </style>
+    <!-- external css preferred -->
+    <link rel="stylesheet" href="list.css">
   </head>
   <body>
+
+    <h3> Learn about Nature</h3>
+    
     <img
       class="Nature"
       srcset="
@@ -43,41 +60,30 @@
     <p>
         Nature is the connection between the physical world surrounding us and the life inside us. Nature is God’s most precious and valuable gift to humans. It is the principal source of all essential nutrients for all living things on the planet. ‘Nature’ is one of the topics on which we might be asked to write a paragraph. Check the samples provided in the article to learn how to write one on your own.
     </p>
-    <script>
-        var student = {
-            name: "neha",
-            age: 20,
-            company: "proclink",
-        };
-        //Dot Syntax
-        console.log(student.name);
-        // Box syntax
-        console.log(student["age"]);
-        var t= null;
-        console.log(typeof t);
-
-        let name= "nikku";
-        console.log(name);
-        name="Ajju";
-        console.log(name);
-        const marks = [80,79,90];
-        marks[1]= 20; 
-        console.log(marks);
-
-        const t1 =[ 30,40,50]
-        const t2=t1;// copy by reference
-        const t3= [30,40,50];
-        t1.push(80);
-        t2.push(90);
-        t3.push(70);
-        console.log(t1);
-        console.log(t2);
-        console.log(t3);
-// It is not creating a new array , rather it is taking the first one as a reference
-       
-
-    </script>
+    
+    <h3>Hobbies</h3>
+    <ul>
+      <li>Danicng</li>
+      <li>Singing</li>
+      <li>games</li>
+        <li>
+          Anime
+          <li>One piece</li>
+          <li>Naruto</li>
+          <li>Attack on titan</li>
+          </ol>
+        </li>
+    <ul>
+      <li>coding</li>
+      <li>bug fixing</li>
+      <li>testing</li>
+    </ul>
+    </ul>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta doloribus suscipit qui et. Blanditiis quasi impedit veniam quae facere, reiciendis perferendis tenetur, quis aut voluptas voluptatum porro tempore recusandae! Laborum!</p>
+    <a href="https://www.geeksforgeeks.org/numpy-empty-python/">GEEK</a>
+    <a href="https://app.netlify.com/teams/nehapatlolla/integrations/security"target = "openme">netlify</a>
   </body>
+  
 </html>
 <!-- shortcuts -->
 <!-- 1. windows + .  emojis -->

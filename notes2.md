@@ -143,3 +143,5 @@ cannot have special symbols($,@,#,!)
  *
  * /
 ```
+
+To enforce the coding standard we use ESLint.

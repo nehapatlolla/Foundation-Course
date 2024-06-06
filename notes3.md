@@ -27,6 +27,8 @@ STakeholders- If anything goe swrong in the product their collars will be pulled
 
 ## Agile
 
+Its an iterative process
+
 1. CEO
 2. Project manager
 
@@ -65,7 +67,7 @@ Migration projects where the requirement is clear, it takes min of the 6 months 
 
 We have 2 release cycles. but in agile 12 releases, ina month 2 sprints are done. 1 sprint for develoment and other is for the development.
 
-## implementation of the agile
+## implementation of the agile- Scrum
 
 1. **Scrum** - An agile approach like scrum is all about "adaptive planning, evolutionary development, and early(and often )delivery.
 
@@ -73,13 +75,16 @@ theme of this model is to keep the end user’s satisfaction in mind. For that, 
 
 ![alt text](image-1.png)'
 
-**Sprint planning(1hr)**---> is for filling the 14 days of time , calender fixing and that should be full.
+**Sprint**- it happens in 2 weeks, Design, develop, test, deploy working incerement.
+**Sprint planning(1hr)**---> is for filling the 14 days of time , calender fixing and that should be full. And the assigned people provides the story points
+
+Bug fixing is done inthe second sprint
 
 ![alt text](image-2.png)
 
-**Story points** the time required to complete the task. story points are generally fibonacci number.(1,2,3,5,8).
+**Story points** the time required to complete the task. story points are generally fibonacci number.(1,2,3,5,8). Stry points are looked by manager
 
-**Burn down chart** A burn down chart is a graph that shows the work left to do versus the time left to do it. It is a project management tool that helps to track the progress and predict the completion date of the project
+**Burn down chart** A burn down chart is a graph that shows the work left to do versus the time left to do it. It is a project management tool that helps to track the progress and predict the completion date of the project.
 
 ![alt text](image-5.png)
 
@@ -97,9 +102,11 @@ theme of this model is to keep the end user’s satisfaction in mind. For that, 
 
 ![Kanban board](image-4.png)
 
-Kanban board is a tool to manage the scrum. It gives shape to tthe agile. It tells what priority is assigned, what all nare completed, backlogs, etc.
+Kanban board is a tool to manage the scrum. It gives shape to the agile. It tells what priority is assigned, what all are completed, backlogs, etc.
 
-After the process is done by the dev team testing team picks up and is assigned to QA lead.
+Reviewer checks the code quality.
+
+After the process is done by the dev team testing team picks up the tickets and is assigned to QA lead.
 
 ## References
 

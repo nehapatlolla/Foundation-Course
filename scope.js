@@ -1,3 +1,35 @@
+
+        var student = {
+            name: "neha",
+            age: 20,
+            company: "proclink",
+        };
+        //Dot Syntax
+        console.log(student.name);
+        // Box syntax
+        console.log(student["age"]);
+        var t= null;
+        console.log(typeof t);
+
+        let name= "nikku";
+        console.log(name);
+        name="Ajju";
+        console.log(name);
+        const marks = [80,79,90];
+        marks[1]= 20; 
+        console.log(marks);
+
+        const t1 =[ 30,40,50]
+        const t2=t1;// copy by reference
+        const t3= [30,40,50];
+        t1.push(80);
+        t2.push(90);
+        t3.push(70);
+        console.log(t1);
+        console.log(t2);
+        console.log(t3);
+// It is not creating a new array , rather it is taking the first one as a reference
+
 {
     let x = 2;
   }
