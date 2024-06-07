@@ -1,6 +1,9 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    place-content: center;
+    display: grid;
 }
 
 .task{
@@ -10,7 +13,11 @@ body{
     border-left: 8px solid #56aae8;
     border-radius: 12px;
     margin: 20px;
-    width: 50%;
+    max-width: 50%;
     text-align:justify;
 
 }
+/*1vh- 1% of sceen height
+1vw - 1% of sceen height
+width - 1%-of container width
+
