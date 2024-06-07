@@ -3,19 +3,34 @@
 <html lang="en">
   <!-- language changing -->
   <head>
-    <!-- atrributes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=DM+Serif+Text:ital@0;1&family=Jacquard+12&family=Lora:ital,wght@0,400..700;1,400..700&family=Seymour+One&family=Teko:wght@300..700&family=Tiny5&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=DM+Serif+Text:ital@0;1&family=Jacquard+12&family=Lora:ital,wght@0,400..700;1,400..700&family=Teko:wght@300..700&family=Tiny5&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Jacquard+12&family=Lora:ital,wght@0,400..700;1,400..700&family=Teko:wght@300..700&family=Tiny5&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jacquard+12&family=Lora:ital,wght@0,400..700;1,400..700&family=Teko:wght@300..700&family=Tiny5&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jacquard+12&family=Lora:ital,wght@0,400..700;1,400..700&family=Teko:wght@300..700&display=swap" rel="stylesheet">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My name</title>
     <style>
         /* Element selector */
-      p,
+     
       h1 {
         color: rgb(244, 0, 77);
-        font-size: 16px;
+        font-size: 90px;
         text-align: center;
         line-height: 1;
         letter-spacing: 1px;
+        font-family: "Seymour One", sans-serif;
       }
       /* class selector */
       /* internal css */
@@ -25,28 +40,55 @@
         width: 100%;
         object-fit: cover;
         padding: 10px 10px 10px 10px;
+        font-family: "Seymour One", sans-serif;
         /* inline css */
+        border-style: dotted;
+        border-radius: 10px;
         border: 5px solid rgb(119, 8, 8);
+        border-color: chocolate;
       }
-
+      h2{
+        font-size: medium;
+        color: rgb(46, 139, 108);
+        text-align: center;
+        text-decoration: dotted;
+        letter-spacing: 0cap;
+        font-size: 50px;
+        font-family: "DM Serif Text", serif;
+      }
       h3{
         font-size: 60px;
         font-weight: normal;
-        font-style: italic;
+        font-style: oblique;
         color: rgb(49, 49, 220);
-        /* 1.color
-        2.RGBA
+        font-family: "Jacquard 12", system-ui;
+        /* 
+        1. color
+        2. RGBA
         3. HSL-human friendly
-        4. hex value- oldest way to use*/
+        4. hex value- oldest way to use
+        5. lch- better color gammit----- safari implemented first*/
       }
-       h3{
+       h1{
         .Birds{
           font-size: 60px;
           text-align: center;
           text-transform: capitalize;
           text-decoration: line-through;
           letter-spacing: 15px;
+
+          /*
+          lineheight avoids re reading
+
+          */
           }
+      }
+      p1{
+        color: brown;
+        font-family: "Tiny5", sans-serif;
+      }
+      p{
+        color: chartreuse;
       }
       
     </style>
@@ -56,7 +98,8 @@
   <body>
 
     <h3> Learn about Nature</h3>
-    <h3 class="Birds">Birds</h3>
+    
+    <h2 class="Birds">Birds</h2>
     <img
       class="Nature"
       srcset="
@@ -67,31 +110,36 @@
     <input type="checkbox" name="" id="">
     <h1 align="center">Nature</h1><basefont>
 
-    <p>
+    <p1>
         Nature is the connection between the physical world surrounding us and the life inside us. Nature is God’s most precious and valuable gift to humans. It is the principal source of all essential nutrients for all living things on the planet. ‘Nature’ is one of the topics on which we might be asked to write a paragraph. Check the samples provided in the article to learn how to write one on your own.
-    </p>
-    
+    </p1>
+    <p>Hi, folks! So, since I was a child, I was always fascinated by nature in all of its forms. Animals, astronomy, geology, plants and their uses, etc.
+
+      I was wondering: in which nature-related hobbies do you folks partake? Which ones would you recommend me? I'm currently considering amateur astronomy, rock collecting, backpacking, camping, and keeping a garden. I already do jogging in the park, write poetry (haikus and such) and take pictures of the sky and its clouds (I can recognize some cloud shapes. It's fun, and very rewarding!).</p>
+
+        
+      <a href="https://www.geeksforgeeks.org/numpy-empty-python/">GEEK</a>
+      <a href="https://app.netlify.com/teams/nehapatlolla/integrations/security"target = "openme">netlify</a>
     <h2>Hobbies</h2>
-    <ul>
-      <li>Danicng</li>
-      <li>Singing</li>
-      <li>games</li>
+    
+    <ul class = "hobbies">
+      <li>Wildlife photography</li>
+      <li>Bird watching</li>
+      <li>feeding birds</li>
         <li>
-          Anime
-          <li>One piece</li>
-          <li>Naruto</li>
-          <li>Attack on titan</li>
+          other hobbies
+          <ol>
+          <li>Hiking</li>
+          <li>Camping</li>
+          <li>Gardening</li>
           </ol>
         </li>
     <ul>
+      <ul>
       <li>coding</li>
       <li>bug fixing</li>
       <li>testing</li>
     </ul>
-    </ul>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta doloribus suscipit qui et. Blanditiis quasi impedit veniam quae facere, reiciendis perferendis tenetur, quis aut voluptas voluptatum porro tempore recusandae! Laborum!</p>
-    <a href="https://www.geeksforgeeks.org/numpy-empty-python/">GEEK</a>
-    <a href="https://app.netlify.com/teams/nehapatlolla/integrations/security"target = "openme">netlify</a>
   </body>
   
 </html>

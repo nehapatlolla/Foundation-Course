@@ -138,7 +138,7 @@ selects <p class="my-class"> and <a class="my-class">
 
 CSS layout is mostly based on the box model. Each box taking up space on your page has properties like:
 
-**padding**, the space around the content.
+**padding**, the space around the content. shrink inside
 
 **border**, the solid line that is just outside the padding.
 
