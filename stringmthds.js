@@ -57,15 +57,15 @@ function processNames(names) {
   console.log(processNames(namesArray));*/
 
 function processNames(names) {
-    let result = [];
-    for (let name of names) {
-      result.push(name.toUpperCase().split(" ").join("_"));
-    }
-    return result;
+  let result = [];
+  for (let name of names) {
+    result.push(name.toUpperCase().split(" ").join("_"));
   }
-  
-  const namesArray = ["john doe", "jane smith", "alice jones"];
-  console.log(processNames(namesArray));
+  return result;
+}
+
+const namesArray = ["john doe", "jane smith", "alice jones"];
+console.log(processNames(namesArray));
 
 /*
 function processNames(names) {
@@ -81,15 +81,15 @@ toString- str = num.toString();
 String literal simple- str = ""+num;*/
 
 // write a function to make it uppercase
- /**
+/**
  * Converts a string to uppercase.
  * @param {string} str This is the input string
  * @returns {string} this is the uppercase of the input string
  **/
-function toUpperCase(str){
+function toUpperCase(str) {
   return str.toUpperCase();
 }
 
-let name= "neha reddy";
+let name = "neha reddy";
 let changedUpperCase = toUpperCase(name);
 console.log(changedUpperCase);

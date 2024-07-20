@@ -63,7 +63,7 @@ where ever there is declaration, we can use the object destruction to make the c
 **ES6+ features**
 
 1. numeric seperators 1_00_00_000
-2. nullish coalacing ?? for this operator 0 is a truthy value
+2. nullish coalacing ?? for this operator 0 is a truthy value--binary operator
 3. Optional chaining
 
 ### Ternary operators
